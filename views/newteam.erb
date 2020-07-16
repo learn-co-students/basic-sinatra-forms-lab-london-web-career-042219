@@ -3,9 +3,46 @@
  <head>
   <meta charset="UTF-8">
   <title>Basketball Team Signup</title>
+
+
  </head>
  <body>
+
+<h1>Create a Basketball Team!</h1>
+
+    <form method="POST" action="/team">
+
+    <p>Team Name:
+      <input type="text" name="name" value= "default_value">
+      </p>  
+
+    <p>Coach:
+      <input type="text" name="coach" value= "default_value">
+      </p>   
+                    
+    <h2>Point Guard:</h2>
+      <input type="text" name="pg">   
+                      
+    <h2>Shooting Guard:</h2>
+      <input type="text" name="sg">   
+                    
+    <h2>Small Forward:</h2>
+      <input type="text" name="sf">   
+                    
+    <h2>Power Forward:</h2>
+      <input type="text" name="pf">   
+                    
+    <h2>Center:</h2>
+      <input type="text" name="c">  
+
+       <input type="submit" value= "ace_button" id="Submit">   
+
+    </form> 
+
  </body>
 </html>
 
 
+<% #When creating your form, your "Submit" button will need to be identified by an id attribute with value of "Submit". We're telling this to you now because our test frame work, Capybara, requires buttons to be findable by an id, title, or value attribute.
+
+ %>
